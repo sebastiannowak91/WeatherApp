@@ -1,0 +1,41 @@
+.upcoming-weather-component {
+  display: flex;
+  align-items: center;
+  padding: 0.75em 1em;
+  transition: 0.5s;
+  border-radius: 1rem;
+  margin: 0 0.5em;
+}
+.upcoming-weather-component .upcoming-weather {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+  flex: 1;
+  padding: 0;
+  margin: 0;
+}
+.upcoming-weather-component .upcoming-weather li {
+  list-style: none;
+  flex: 0.3;
+}
+.upcoming-weather-component .upcoming-weather .upcoming-date {
+  flex: 1;
+}
+.upcoming-weather-component .upcoming-weather img {
+  margin: 0;
+  padding: 0;
+  max-height: 3rem;
+}
+.upcoming-weather-component button {
+  background: none;
+  border: none;
+}
+.upcoming-weather-component button img {
+  max-height: 2rem;
+}
+
+.upcoming-weather-component:hover {
+  box-shadow: 0 0 1rem #616451;
+  cursor: pointer;
+}/*# sourceMappingURL=upcoming-weather.component.css.map */

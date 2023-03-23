@@ -1,0 +1,47 @@
+.upcoming-weather-component {
+    display: flex;
+    align-items: center;
+    padding: .75em 1em;
+    transition: .5s;
+    border-radius: 1rem;
+    margin: 0 .5em;
+
+    .upcoming-weather {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1.5rem;
+        flex: 1;
+        padding: 0;
+        margin: 0;
+
+        li {
+            list-style: none;
+            flex: .3;
+        }
+
+        .upcoming-date {
+            flex: 1;
+        }
+
+        img {
+            margin: 0;
+            padding: 0;
+            max-height: 3rem;
+        }
+    }
+
+    button {
+        background: none;
+        border: none;
+
+        img {
+            max-height: 2rem;
+        }
+    }
+}
+
+.upcoming-weather-component:hover {
+    box-shadow: 0 0 1rem #616451;
+    cursor: pointer;
+}
