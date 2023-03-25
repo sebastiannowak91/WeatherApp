@@ -1,1 +1,9 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"weather-forecast.component.css"}
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "weather-forecast.component.scss"
+    ],
+    "names": [],
+    "file": "weather-forecast.component.css"
+}

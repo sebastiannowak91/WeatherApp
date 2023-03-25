@@ -1,11 +1,18 @@
 .weather-settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
+
 .weather-settings button {
   background: none;
   border: none;
 }
+
 .weather-settings button img {
   max-height: 3rem;
-}/*# sourceMappingURL=weather-settings.component.css.map */
+}
+/*# sourceMappingURL=weather-settings.component.css.map */

@@ -1,55 +1,89 @@
 .current-weather-component {
   padding-bottom: 2em;
-  border-bottom: 0.15rem solid #9a7852;
+  border-bottom: .15rem solid #9a7852;
   margin-bottom: 2em;
 }
+
 .current-weather-component .current-weather {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 3em;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .current-weather-component .current-weather img {
   margin: 0;
   padding: 0;
   max-height: 10rem;
 }
+
 .current-weather-component .current-weather .current-temperature {
   font-size: 3rem;
   font-weight: bold;
 }
+
 .current-weather-component .current-city {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 3rem;
   text-transform: uppercase;
   font-weight: bold;
 }
+
 .current-weather-component .current-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 2rem;
   font-weight: bold;
 }
+
 .current-weather-component .current-weather-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex: 1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   list-style: none;
   padding: 0;
   margin: 2em 0 0 0;
 }
+
 .current-weather-component .current-weather-details li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1em;
   font-weight: bold;
 }
+
 .current-weather-component .current-weather-details li img {
-  margin: 0 0.5em 0 0;
+  margin: 0 .5em 0 0;
   padding: 0;
   max-height: 3rem;
-}/*# sourceMappingURL=current-weather.component.css.map */
+}
+/*# sourceMappingURL=current-weather.component.css.map */
