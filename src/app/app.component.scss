@@ -1,10 +1,12 @@
+
 .card {
     display: flex;
     align-items: center;
     background-color: #9fab95;
     min-height: 100vh;
-    margin: 0em;
-    padding: 0em;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .card-body {
@@ -18,5 +20,20 @@
     box-shadow: 0 0 1rem #616451;
     margin: 5em auto;
     padding: 0 0 2em 0;
-    width: 45rem;
+    width: 40rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .card-body {
+        margin: 2em auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .card-body {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
 }

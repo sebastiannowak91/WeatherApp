@@ -4,9 +4,11 @@
             <a [routerLink]="['/']"><img src="../assets/x.png" alt=""/></a>
         </div>
         <img src="../assets/cloud-sun.png" alt=""/>
-        <label for="country">Write down the Country Name</label>
-            <div class="country">
-                <input type="text" formControlName="country">
+        <label for="country">Enter the country name<span> *</span></label>
+        <span class="span-white">*Please note, that only Poland is available on this state of app development.</span>
+            <div class="enter-country">
+                <input class="country-input" type="text" formControlName="country">
+                <span class="span-city" *ngIf="!adminForm.get('country')?.valid && adminForm.get('country')?.touched">A correct country name is required!</span>
             </div>
         <label for="city">Check the weather for...</label>
             <div class="select-city">

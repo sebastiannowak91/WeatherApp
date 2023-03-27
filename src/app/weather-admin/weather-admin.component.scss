@@ -21,8 +21,21 @@
         margin-bottom: .5em;
     }
 
+    span {
+        margin-top: 0;
+        color:#9a7852;
+        font-weight: bold;
+    }
+
+    .span-white {
+        color: #e4e4d8;
+        font-weight: normal;
+    }
+
+
     select,
-    button {
+    button, 
+    .country-input {
         margin: 0 0 .5em 0;
         padding: .2em .5em;
     }
@@ -33,7 +46,8 @@
     }
 
     select,
-    button {
+    button, 
+    .country-input  {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -48,7 +62,8 @@
         box-shadow: 0 0 .5rem #616451;
     }
 
-    select {
+    select, 
+    .country-input  {
         box-shadow: 0 0 .5rem #616451;
     }
 
@@ -75,6 +90,18 @@
         font-weight: bold;
     }
 
+    .enter-country {
+        margin-bottom: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .country-input {
+            margin-top: .5em;
+        }
+    }
+
     .select-city {
         margin-bottom: 2em;
         display: flex;
@@ -83,8 +110,6 @@
         .span-city {
             display: flex;
             justify-content: center;
-            color:  #9a7852;
-            font-weight: bold;
             margin-top: 1em;
         }
     }
@@ -102,13 +127,13 @@
         }
     }
 
-    .span-units {
-        margin-top: 0;
-        color:#9a7852;
-        font-weight: bold;
-    }
-
     input.ng-invalid.ng-touched {
         border: .25rem solid #9a7852;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .weather-admin {
+        padding: 0 1em 0 1em;
     }
 }

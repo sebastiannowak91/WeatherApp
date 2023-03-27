@@ -35,8 +35,20 @@
   margin-bottom: .5em;
 }
 
+.weather-admin span {
+  margin-top: 0;
+  color: #9a7852;
+  font-weight: bold;
+}
+
+.weather-admin .span-white {
+  color: #e4e4d8;
+  font-weight: normal;
+}
+
 .weather-admin select,
-.weather-admin button {
+.weather-admin button,
+.weather-admin .country-input {
   margin: 0 0 .5em 0;
   padding: .2em .5em;
 }
@@ -47,7 +59,8 @@
 }
 
 .weather-admin select,
-.weather-admin button {
+.weather-admin button,
+.weather-admin .country-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,7 +82,8 @@
           box-shadow: 0 0 .5rem #616451;
 }
 
-.weather-admin select {
+.weather-admin select,
+.weather-admin .country-input {
   -webkit-box-shadow: 0 0 .5rem #616451;
           box-shadow: 0 0 .5rem #616451;
 }
@@ -99,6 +113,27 @@
   font-weight: bold;
 }
 
+.weather-admin .enter-country {
+  margin-bottom: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weather-admin .enter-country .country-input {
+  margin-top: .5em;
+}
+
 .weather-admin .select-city {
   margin-bottom: 2em;
   display: -webkit-box;
@@ -117,8 +152,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #9a7852;
-  font-weight: bold;
   margin-top: 1em;
 }
 
@@ -139,13 +172,13 @@
   max-height: 4rem;
 }
 
-.weather-admin .span-units {
-  margin-top: 0;
-  color: #9a7852;
-  font-weight: bold;
-}
-
 .weather-admin input.ng-invalid.ng-touched {
   border: .25rem solid #9a7852;
+}
+
+@media only screen and (max-width: 650px) {
+  .weather-admin {
+    padding: 0 1em 0 1em;
+  }
 }
 /*# sourceMappingURL=weather-admin.component.css.map */
