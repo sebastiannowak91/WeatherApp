@@ -1,4 +1,5 @@
 A Weather Application built with Angular. 
+Demo: 🔗 [WeatherApp](https://sebastiannowak91.github.io/WeatherApp/)
 
 During development process I used:
 
