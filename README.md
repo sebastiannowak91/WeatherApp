@@ -1,6 +1,4 @@
-A Weather Application built with Angular. 
-
-Demo: 🔗 [WeatherApp](https://sebastiannowak91.github.io/WeatherApp/)
+A Weather Application built with Angular.
 
 During development process I used:
 
@@ -9,5 +7,8 @@ During development process I used:
 -	working with observables;
 -	handling forms (reactive approach with built ones and custom validators);
 -	changing pages with routing;
+
+
+Demo: 🔗 [WeatherApp](https://sebastiannowak91.github.io/WeatherApp/)
 
 
