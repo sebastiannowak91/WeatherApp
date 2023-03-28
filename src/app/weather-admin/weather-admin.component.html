@@ -1,9 +1,9 @@
 <form [formGroup]="adminForm" (ngSubmit)="onSubmit()">
     <div class="weather-admin">
         <div class="close">
-            <a [routerLink]="['/']"><img src="../assets/x.png" alt=""/></a>
+            <a [routerLink]="['/']"><img src="assets/x.png" alt=""/></a>
         </div>
-        <img src="../assets/cloud-sun.png" alt=""/>
+        <img src="assets/cloud-sun.png" alt=""/>
         <label for="country">Enter the country name<span> *</span></label>
         <span class="span-white">*Please note, that only Poland is available on this state of app development.</span>
             <div class="enter-country">
@@ -20,7 +20,7 @@
             </div>
         <label for="units">Select Units</label>
             <div class="select-units">
-                <img src="../assets/thermometer.png" alt=""/>
+                <img src="assets/thermometer.png" alt=""/>
                 <select id="units" formControlName="unit">
                     <option value="{{ '' }}"></option>
                     <option value="C">C</option>
