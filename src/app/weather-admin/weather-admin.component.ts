@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CitiesService } from '../shared/cities.service';
-import { CitiesData} from '../shared/cities-data.model';
+import { CityData} from '../shared/city-data.model';
 import { SelectedCityService } from '../shared/selected-city.service';
 import { StorageCityService } from '../shared/storage-city.service';
 import { Subscription } from 'rxjs';
@@ -15,7 +15,7 @@ import { Subscription } from 'rxjs';
 export class WeatherAdminComponent implements OnInit {
   adminForm!: FormGroup;
   selectedCity!: number;
-  cities: CitiesData[] = this.citiesService.cities;
+  cities: CityData[] = this.citiesService.cities;
   selectedCityServiceSubscription!: Subscription;
   availableCountries = ['Poland'];
 

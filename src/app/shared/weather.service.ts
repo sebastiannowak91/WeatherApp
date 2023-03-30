@@ -2,14 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { WeatherData } from './weather-data.model';
 import { CitiesService } from '../shared/cities.service';
-import { CitiesData} from '../shared/cities-data.model';
+import { CityData} from './city-data.model';
 import { SelectedCityService } from '../shared/selected-city.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class WeatherService {
-  cities: CitiesData[] = this.citiesService.cities;
+  cities: CityData[] = this.citiesService.cities;
   selectedCity!: number;
 
   constructor(

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { WeatherData } from '../../shared/weather-data.model';
-import { CitiesData } from '../../shared/cities-data.model';
+import { CityData } from '../../shared/city-data.model';
 
 @Component({
   selector: 'app-current-weather',
@@ -11,7 +11,7 @@ export class CurrentWeatherComponent {
 
   @Input() weatherData!: WeatherData;
   @Input() selectedDay!: number;
-  @Input() cities!: CitiesData[];
+  @Input() cities!: CityData[];
   @Input() selectedCity!: number;
 
 }

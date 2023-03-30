@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { CityData } from './city-data.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CitiesService {
 
-  cities = [
+  cities: CityData[] = [
     {
       name: "Gdańsk",
       latitude: 54.35,

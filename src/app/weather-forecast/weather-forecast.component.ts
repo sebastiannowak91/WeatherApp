@@ -3,7 +3,7 @@ import { WeatherData } from '../shared/weather-data.model';
 import { WeatherService } from '../shared/weather.service';
 import { SelectedDayService } from '../shared/selected-day.service';
 import { CitiesService } from '../shared/cities.service';
-import { CitiesData} from '../shared/cities-data.model';
+import { CityData} from '../shared/city-data.model';
 import { SelectedCityService } from '../shared/selected-city.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
@@ -17,8 +17,7 @@ export class WeatherForecastComponent implements OnInit {
   weatherData!: WeatherData;
   selectedDay!: number;
   selectedCity!: number;
-  i!: number;
-  cities: CitiesData[] = this.citiesService.cities;
+  cities: CityData[] = this.citiesService.cities;
   selectedDayServiceSubscription!: Subscription;
   weatherServiceSubscription!: Subscription;
   selectedCityServiceSubscription!: Subscription;
